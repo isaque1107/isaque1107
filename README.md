@@ -62,11 +62,12 @@ Sou desenvolvedor full-stack e gosto de levar produto do zero ao ar: interface, 
 
 ---
 
-## Linguagens que mais uso
+## GitHub em números
 
 <div align="center">
 
-<img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaque1107&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&locale=pt-br&cache_seconds=86400" alt="Linguagens mais usadas" />
+<img height="165" src="./profile/stats.svg" alt="Estatísticas do GitHub" />
+<img height="165" src="./profile/top-langs.svg" alt="Linguagens mais usadas" />
 
 </div>
 
