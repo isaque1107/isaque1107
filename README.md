@@ -10,7 +10,6 @@
 
 <a href="https://www.linkedin.com/in/isaque-dutra-007539176/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:isaque2304@gmail.com"><img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" /></a>
-<img src="https://komarev.com/ghpvc/?username=isaque1107&style=for-the-badge&color=38bdf8&label=VISITAS" alt="Visitas no perfil" />
 
 </div>
 
