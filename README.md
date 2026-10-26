@@ -63,20 +63,11 @@ Sou desenvolvedor full-stack e gosto de levar produto do zero ao ar: interface, 
 
 ---
 
-## GitHub em números
+## Linguagens que mais uso
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=isaque1107&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&locale=pt-br&cache_seconds=86400" alt="Estatísticas do GitHub" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaque1107&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&locale=pt-br&cache_seconds=86400" alt="Linguagens mais usadas" />
-
-<br/><br/>
-
-<img src="https://ghchart.rshah.org/38bdf8/isaque1107" width="85%" alt="Contribuições no último ano" />
-
-<br/><br/>
-
-<img width="60%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=isaque1107&theme=tokyonight&utcOffset=-3" alt="Horários mais produtivos" />
+<img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaque1107&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&locale=pt-br&cache_seconds=86400" alt="Linguagens mais usadas" />
 
 </div>
 
