@@ -4,6 +4,10 @@ on:
   schedule:
     # 06:00 UTC = 03:00 em Brasília
     - cron: "0 6 * * *"
+  # Regera os cards sempre que o perfil muda. Commits feitos pelo próprio
+  # workflow não disparam novas execuções, então não há laço infinito.
+  push:
+    branches: [main]
   workflow_dispatch:
 
 # Necessário para o passo de commit conseguir dar push nos SVGs gerados.
