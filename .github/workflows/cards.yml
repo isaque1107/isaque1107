@@ -1,0 +1,50 @@
+name: Atualiza os cards do perfil
+
+on:
+  schedule:
+    # 06:00 UTC = 03:00 em Brasília
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+# Necessário para o passo de commit conseguir dar push nos SVGs gerados.
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gera o card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&locale=pt-br
+          path: profile/stats.svg
+          # Usa o PAT quando existir; sem ele, cai no token do próprio Actions
+          # (que enxerga apenas repositórios públicos).
+          token: ${{ secrets.GRS_PAT || secrets.GITHUB_TOKEN }}
+          # Falha o workflow em vez de commitar um card "Something went wrong".
+          fail_on_error: "true"
+
+      - name: Gera o card de linguagens
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=38BDF8&locale=pt-br
+          path: profile/top-langs.svg
+          token: ${{ secrets.GRS_PAT || secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Commita os cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --staged --quiet; then
+            echo "Os cards não mudaram; nada a commitar."
+            exit 0
+          fi
+          git commit -m "Atualiza os cards do perfil"
+          git push
